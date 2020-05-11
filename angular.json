@@ -33,7 +33,8 @@
             "scripts": [
               "./node_modules/jquery/dist/jquery.js",
               "./node_modules/bootstrap/dist/js/bootstrap.js"
-            ]
+            ],
+            "baseHref": "/portal/app/"
           },
           "configurations": {
             "production": {
@@ -65,11 +66,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "test-fkp-gui2:build",
-            "port": 8098,
-            "proxyConfig": "proxy.conf.js",
-            "aot": true,
-            "ssl": true
+            "browserTarget": "test-fkp-gui2:build"
           },
           "configurations": {
             "production": {
